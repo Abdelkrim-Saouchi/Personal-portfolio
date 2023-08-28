@@ -1,7 +1,20 @@
-import './App.css';
+import './App.scss';
+import Header from './components/Header';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Hero from './pages/Hero';
+import Projects from './pages/Projects';
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Hero />
+      <Header />
+      <About />
+      <Projects />
+      <Contact />
+    </>
+  );
 }
 
 export default App;
