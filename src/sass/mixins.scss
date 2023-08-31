@@ -1,0 +1,10 @@
+@mixin container() {
+  padding-inline: 2em;
+}
+
+@mixin flex-center($row: row) {
+  display: flex;
+  flex-direction: $row;
+  align-items: center;
+  justify-content: center;
+}
