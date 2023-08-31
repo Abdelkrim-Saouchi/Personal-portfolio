@@ -1,0 +1,18 @@
+@use '../sass/mixins.scss' as *;
+
+.projects {
+  min-height: 100dvb;
+  min-height: 100vh;
+  @include container;
+
+  h2 {
+    margin-block: 1em;
+  }
+}
+
+.projectsList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}

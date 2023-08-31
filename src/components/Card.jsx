@@ -2,15 +2,20 @@ import { mdiGithub, mdiLink } from '@mdi/js';
 import Icon from '@mdi/react';
 import PropTypes from 'prop-types';
 import styles from './Card.module.scss';
+import Tag from './Tag';
 
 const Card = (props) => {
   return (
     <div className={styles.card}>
       <img src={props.src} alt={props.alt} />
       <h3>{props.title}</h3>
-      <div>{props.tags}</div>
+      <div className={styles.tags}>
+        {props.tags.map((tag) => (
+          <Tag key={tag} name={tag} />
+        ))}
+      </div>
       <p>{props.desc}</p>
-      <div>
+      <div className={styles.links}>
         <a href={props.liveLink}>
           <Icon path={mdiLink} size={1} />
         </a>
