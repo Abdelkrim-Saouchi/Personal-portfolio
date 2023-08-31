@@ -1,16 +1,11 @@
 import { mdiFacebook, mdiGithub, mdiGmail, mdiLinkedin } from '@mdi/js';
 import Icon from '@mdi/react';
 
-<Icon path={mdiGmail} size={1} />;
-
 const Contact = () => {
   return (
     <section>
       <h2>Contact Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-        itaque?
-      </p>
+      <p>Do not hesitate if you want to contact me and discuss.</p>
       <form action="">
         <input type="text" placeholder="Name" />
         <input type="email" placeholder="Email" />
