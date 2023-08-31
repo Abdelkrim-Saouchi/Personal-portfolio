@@ -3,7 +3,7 @@ import Icon from '@mdi/react';
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <h2>Contact Me</h2>
       <p>Do not hesitate if you want to contact me and discuss.</p>
       <form action="">

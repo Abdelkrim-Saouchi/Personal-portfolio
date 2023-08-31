@@ -5,7 +5,7 @@ const Projects = () => {
   const projects = getData();
 
   return (
-    <section>
+    <section id="projects">
       <h2>My projects:</h2>
       <div>
         {projects.map((project) => (

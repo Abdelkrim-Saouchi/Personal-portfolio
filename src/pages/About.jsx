@@ -2,7 +2,7 @@ import styles from './About.module.scss';
 
 const About = () => {
   return (
-    <section>
+    <section id="about">
       <h2>About Me</h2>
       <p>
         Welcome to my portfolio! I'm not your usual pharmacist; I'm also a
