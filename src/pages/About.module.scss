@@ -1,5 +1,6 @@
 @use '../sass/mixins.scss' as *;
 @use '../sass/variables' as *;
+@use '../sass/colors' as *;
 
 .about {
   @include container;
@@ -10,7 +11,7 @@
 
 .content {
   margin-block: $base-margin;
-  border: 2px solid black;
+  border: 2px solid $accent-color-2;
   padding: 1em;
   @include flex-center(column);
   gap: 1em;
@@ -20,7 +21,7 @@
     position: absolute;
     top: 0;
     transform: translateY(-55%);
-    background-color: white;
+    background-color: $bg-color;
     padding-inline: 0.5em;
   }
 

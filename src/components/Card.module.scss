@@ -1,7 +1,9 @@
+@use '../sass/colors' as *;
+
 .card {
   width: 40%;
   max-width: 400px;
-  border: 2px solid black;
+  border: 2px solid $accent-color-2;
   display: flex;
   flex-direction: column;
   gap: 0.6em;
@@ -10,6 +12,10 @@
   img {
     width: 100%;
     height: 50%;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 
   p {
@@ -21,6 +27,11 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
+
+  div {
+    color: $accent-color-2;
+    background-color: $accent-color;
+  }
 }
 
 .links {
@@ -28,5 +39,6 @@
 
   a {
     margin-left: 1em;
+    color: $accent-color-2;
   }
 }
