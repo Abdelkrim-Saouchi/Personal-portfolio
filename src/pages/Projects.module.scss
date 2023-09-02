@@ -4,6 +4,7 @@
   min-height: 100dvb;
   min-height: 100vh;
   @include container;
+  padding-top: 3em;
 
   h2 {
     margin-block: 1em;
