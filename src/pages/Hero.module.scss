@@ -1,3 +1,5 @@
+@import '../sass/typed.scss';
+
 .hero {
   min-height: 100dvb;
   min-height: 100vh;
@@ -7,9 +9,31 @@
 
   h1 {
     font-size: 3rem;
+    @include typed(
+      "Hi,<[15]> I'm Krimothiazine",
+      (
+        type: 0.1,
+      ),
+      (
+        caret: true,
+        iterations: 1,
+      )
+    );
+    margin-bottom: 0.3em;
   }
 
   h2 {
     font-size: 2rem;
+    @include typed(
+      "I'm a Web Developer",
+      (
+        type: 0.1,
+      ),
+      (
+        caret: true,
+
+        delay: 4.8,
+      )
+    );
   }
 }
