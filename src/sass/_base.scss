@@ -1,4 +1,5 @@
 @use './mixins.scss' as *;
+@use './colors' as *;
 
 *,
 *::after,
@@ -6,4 +7,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  color: $accent-color;
 }
