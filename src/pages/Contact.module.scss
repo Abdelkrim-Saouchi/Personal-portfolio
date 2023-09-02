@@ -26,6 +26,20 @@
     padding: 0 1em;
   }
 
+  span {
+    border: 2px solid black;
+    padding: 0.5em;
+    color: white;
+  }
+
+  span[data-error] {
+    background-color: red;
+  }
+
+  span[data-success] {
+    background-color: green;
+  }
+
   form {
     display: flex;
     flex-direction: column;

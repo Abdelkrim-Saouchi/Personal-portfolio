@@ -1,42 +1,48 @@
+import emailjs from '@emailjs/browser';
 import { mdiFacebook, mdiGithub, mdiGmail, mdiLinkedin } from '@mdi/js';
 import Icon from '@mdi/react';
-import { useRef } from 'react';
-import { Email } from '../sendEmail/smtp';
+import { useRef, useState } from 'react';
 import styles from './Contact.module.scss';
 
 const Contact = () => {
-  const nameRef = useRef(null);
-  const emailRef = useRef(null);
-  const messageRef = useRef(null);
+  const formRef = useRef(null);
+  const [showError, setShowError] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const sendEmail = (e) => {
-    console.log(emailRef.current.value);
-    console.log(messageRef.current.value);
     e.preventDefault();
-    console.log('run');
-    Email.send({
-      Host: 'smtp.elasticemail.com',
-      Username: 'karimsa1955@outlook.com',
-      Password: 'A9FB2E2E8614FC6E967612165C962003F497',
-      To: 'krimouv1995@gmail.com',
-      From: 'karimsa1955@outlook.com',
-      Subject: 'Message from my Portfolio',
-      Body: `
-        name: ${nameRef.current.value}.
-        email: ${emailRef.current.value}.
-        ${messageRef.current.value}
-      `,
-    }).then((message) => alert(message));
+    emailjs
+      .sendForm(
+        'Contact_service',
+        'contact_form',
+        formRef.current,
+        '2hP8b3vhlUWOxD69e'
+      )
+      .then((_) => {
+        setShowError(false);
+        setShowSuccess(true);
+      })
+      .catch((_) => {
+        setShowError(true);
+        setShowSuccess(false);
+      });
   };
+
   return (
     <section id="contact" className={styles.contact}>
       <div className={styles.content}>
         <h2>Contact Me</h2>
         <p>Do not hesitate if you want to contact me and discuss.</p>
-        <form onSubmit={sendEmail}>
-          <input type="text" placeholder="Name" ref={nameRef} />
-          <input type="email" placeholder="Email" ref={emailRef} />
-          <textarea placeholder="Message" ref={messageRef}></textarea>
+
+        {showError && <span data-error>Something wrong happened! Retry.</span>}
+        {showSuccess && (
+          <span data-success>Received! I'll reply as soon as possible.</span>
+        )}
+
+        <form onSubmit={sendEmail} ref={formRef}>
+          <input type="text" placeholder="Name" name="user_name" />
+          <input type="email" placeholder="Email" name="user_email" />
+          <textarea placeholder="Message" name="message"></textarea>
           <button type="submit">Submit</button>
         </form>
         <div>
