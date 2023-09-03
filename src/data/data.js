@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    src: '/./src/assets/abdelkrim-saouchi.github.io_Tic-Tac-Toe_.png',
+    src: '/src/assets/abdelkrim-saouchi.github.io_Tic-Tac-Toe_.png',
     alt: 'Tic tac toe game screenshot',
     title: 'Tic Tac Toe game',
     tags: ['HTML', 'CSS', 'JS'],
@@ -11,7 +11,7 @@ const data = [
   },
   {
     id: 2,
-    src: '/./src/assets/abdelkrim-saouchi.github.io_Todo-list-Project_.png',
+    src: '/src/assets/abdelkrim-saouchi.github.io_Todo-list-Project_.png',
     alt: 'Todo list app screenshot',
     title: 'Todo list app',
     tags: [
@@ -29,7 +29,7 @@ const data = [
   },
   {
     id: 3,
-    src: './src/assets/abdelkrim-saouchi.github.io_Battleship.png',
+    src: '/src/assets/abdelkrim-saouchi.github.io_Battleship.png',
     alt: 'battleship game screenshot',
     title: 'Battleship Game',
     tags: ['HTML', 'CSS', 'JS', 'Jest'],
@@ -39,7 +39,7 @@ const data = [
   },
   {
     id: 4,
-    src: './src/assets/abdelkrim-saouchi.github.io_Shopping-Cart.png',
+    src: '/src/assets/abdelkrim-saouchi.github.io_Shopping-Cart.png',
     alt: 'Shopping site Screenshot',
     title: 'Shopping site FutureStore',
     tags: ['React', 'React router', 'Testing Library', 'CSS modules'],
@@ -50,7 +50,7 @@ const data = [
 
   {
     id: 5,
-    src: './src/assets/rest-countries-api2023.netlify.app.png',
+    src: '/src/assets/rest-countries-api2023.netlify.app.png',
     alt: 'rest countries site screenshot',
     title: 'Rest countries api',
     tags: ['React', 'React router', 'Sass'],
@@ -60,7 +60,7 @@ const data = [
   },
   {
     id: 6,
-    src: './src/assets/where-is-waldo-22df1.web.app_.png',
+    src: '/src/assets/where-is-waldo-22df1.web.app_.png',
     alt: 'Where is waldo game screenshot',
     title: 'Where is Waldo game',
     tags: ['React', 'Firebase', 'Styled Components', 'Desktop only'],
