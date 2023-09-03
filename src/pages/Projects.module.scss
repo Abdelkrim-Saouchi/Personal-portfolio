@@ -25,4 +25,8 @@
   .projects {
     @include container(1.5em);
   }
+
+  .projectsList {
+    justify-items: center;
+  }
 }
