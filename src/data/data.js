@@ -1,4 +1,9 @@
-import img1 from './src/assets/abdelkrim-saouchi.github.io_Tic-Tac-Toe_.png';
+import img3 from '../assets/abdelkrim-saouchi.github.io_Battleship.png';
+import img4 from '../assets/abdelkrim-saouchi.github.io_Shopping-Cart.png';
+import img1 from '../assets/abdelkrim-saouchi.github.io_Tic-Tac-Toe_.png';
+import img2 from '../assets/abdelkrim-saouchi.github.io_Todo-list-Project_.png';
+import img5 from '../assets/rest-countries-api2023.netlify.app.png';
+import img6 from '../assets/where-is-waldo-22df1.web.app_.png';
 
 const data = [
   {
@@ -13,7 +18,7 @@ const data = [
   },
   {
     id: 2,
-    src: '/src/assets/abdelkrim-saouchi.github.io_Todo-list-Project_.png',
+    src: img2,
     alt: 'Todo list app screenshot',
     title: 'Todo list app',
     tags: [
@@ -31,7 +36,7 @@ const data = [
   },
   {
     id: 3,
-    src: '/src/assets/abdelkrim-saouchi.github.io_Battleship.png',
+    src: img3,
     alt: 'battleship game screenshot',
     title: 'Battleship Game',
     tags: ['HTML', 'CSS', 'JS', 'Jest'],
@@ -41,7 +46,7 @@ const data = [
   },
   {
     id: 4,
-    src: '/src/assets/abdelkrim-saouchi.github.io_Shopping-Cart.png',
+    src: img4,
     alt: 'Shopping site Screenshot',
     title: 'Shopping site FutureStore',
     tags: ['React', 'React router', 'Testing Library', 'CSS modules'],
@@ -52,7 +57,7 @@ const data = [
 
   {
     id: 5,
-    src: '/src/assets/rest-countries-api2023.netlify.app.png',
+    src: img5,
     alt: 'rest countries site screenshot',
     title: 'Rest countries api',
     tags: ['React', 'React router', 'Sass'],
@@ -62,7 +67,7 @@ const data = [
   },
   {
     id: 6,
-    src: '/src/assets/where-is-waldo-22df1.web.app_.png',
+    src: img6,
     alt: 'Where is waldo game screenshot',
     title: 'Where is Waldo game',
     tags: ['React', 'Firebase', 'Styled Components', 'Desktop only'],
