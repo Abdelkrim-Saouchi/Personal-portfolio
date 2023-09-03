@@ -28,17 +28,10 @@
     font-size: 1.95rem;
   }
 
-  & > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-
-    p {
-      max-width: 50%;
-      text-align: center;
-      line-height: 1.5;
-    }
+  p {
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.5;
   }
 }
 
@@ -49,5 +42,16 @@
 
   img {
     width: 60px;
+  }
+}
+
+@media (max-width: 690px) {
+  .content {
+    p {
+      align-self: stretch;
+      text-align: left;
+      max-width: 100%;
+      display: flex;
+    }
   }
 }
