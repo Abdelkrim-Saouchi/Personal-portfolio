@@ -9,6 +9,7 @@
   @include flex-center;
   position: relative;
   z-index: 10;
+  padding-block: 3em;
 }
 
 .content {
@@ -91,5 +92,17 @@
     &:hover {
       opacity: 0.8;
     }
+  }
+}
+
+@media (max-width: 960px) {
+  .contact {
+    @include container(1.5em);
+  }
+}
+
+@media (max-width: 550px) {
+  .content {
+    width: 100%;
   }
 }
