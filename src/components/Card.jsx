@@ -16,10 +16,10 @@ const Card = (props) => {
       </div>
       <p>{props.desc}</p>
       <div className={styles.links}>
-        <a href={props.liveLink}>
+        <a href={props.liveLink} target="_blank" rel="noreferrer">
           <Icon path={mdiLink} size={1} />
         </a>
-        <a href={props.githubRepo}>
+        <a href={props.githubRepo} target="_blank" rel="noreferrer">
           <Icon path={mdiGithub} size={1} />
         </a>
       </div>
