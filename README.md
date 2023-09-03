@@ -1,8 +1,13 @@
-# React + Vite
+# The Odin Project Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this is my first Personal Portfolio.
 
-Currently, two official plugins are available:
+## live demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+live demo [here](https://krimothiazine-portfolio.netlify.app/).
+
+### what did I learn?
+
+1. CSS animation using [typed.css](https://typedcss.com/).
+2. Set video as a background.
+3. Create working contact form using [EmailJs](https://www.emailjs.com/).
