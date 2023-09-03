@@ -14,7 +14,7 @@
 .content {
   margin-block: $base-margin;
   border: 2px solid $accent-color-2;
-  padding: 1em;
+  padding: 1.5em;
   @include flex-center(column);
   gap: 1em;
   position: relative;
@@ -23,8 +23,9 @@
     position: absolute;
     top: 0;
     transform: translateY(-55%);
-    background-color: $bg-color;
+    background-color: $dark-bg-color;
     padding-inline: 0.5em;
+    font-size: 1.95rem;
   }
 
   & > div {
