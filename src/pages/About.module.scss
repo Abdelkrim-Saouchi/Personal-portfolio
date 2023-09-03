@@ -45,6 +45,12 @@
   }
 }
 
+@media (max-width: 960px) {
+  .about {
+    @include container(1.5em);
+  }
+}
+
 @media (max-width: 690px) {
   .content {
     p {

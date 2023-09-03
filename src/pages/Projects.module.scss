@@ -16,7 +16,13 @@
 
 .projectsList {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2em;
+}
+
+@media (max-width: 960px) {
+  .projects {
+    @include container(1.5em);
+  }
 }

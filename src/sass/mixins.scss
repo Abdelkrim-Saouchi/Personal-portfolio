@@ -1,5 +1,5 @@
-@mixin container() {
-  padding-inline: 4em;
+@mixin container($padding: 4em) {
+  padding-inline: $padding;
 }
 
 @mixin flex-center($row: row) {
