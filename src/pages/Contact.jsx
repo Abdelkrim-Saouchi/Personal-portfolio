@@ -46,16 +46,24 @@ const Contact = () => {
           <button type="submit">Submit</button>
         </form>
         <div>
-          <a href="#">
+          <a
+            href="mailto:krimouv1995@gamil.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon path={mdiGmail} size={1.5} />
           </a>
-          <a href="#">
+          <a
+            href="https://github.com/Abdelkrim-Saouchi"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Icon path={mdiGithub} size={1.5} />
           </a>
-          <a href="#">
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
             <Icon path={mdiFacebook} size={1.5} />
           </a>
-          <a href="#">
+          <a href="#contact">
             <Icon path={mdiLinkedin} size={1.5} />
           </a>
         </div>
