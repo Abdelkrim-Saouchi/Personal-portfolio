@@ -1,7 +1,9 @@
+import img1 from './src/assets/abdelkrim-saouchi.github.io_Tic-Tac-Toe_.png';
+
 const data = [
   {
     id: 1,
-    src: '/src/assets/abdelkrim-saouchi.github.io_Tic-Tac-Toe_.png',
+    src: img1,
     alt: 'Tic tac toe game screenshot',
     title: 'Tic Tac Toe game',
     tags: ['HTML', 'CSS', 'JS'],
