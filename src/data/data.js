@@ -1,7 +1,7 @@
 const data = [
   {
     id: 1,
-    src: './src/assets/abdelkrim-saouchi.github.io_Tic-Tac-Toe_.png',
+    src: '/./src/assets/abdelkrim-saouchi.github.io_Tic-Tac-Toe_.png',
     alt: 'Tic tac toe game screenshot',
     title: 'Tic Tac Toe game',
     tags: ['HTML', 'CSS', 'JS'],
@@ -11,7 +11,7 @@ const data = [
   },
   {
     id: 2,
-    src: './src/assets/abdelkrim-saouchi.github.io_Todo-list-Project_.png',
+    src: '/./src/assets/abdelkrim-saouchi.github.io_Todo-list-Project_.png',
     alt: 'Todo list app screenshot',
     title: 'Todo list app',
     tags: [
